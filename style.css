@@ -2,17 +2,12 @@ body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: white;
-}
-
-.page {
-  margin: 0 auto;
-  width: 1440px;
-  /* height: 4809px; */
   background-color: #212529;
+  margin: 0;
 }
 
 .active-color {
-  color: #FFB742 !important;
+  color: #FFB742;
 }
 
 .secondary-text-color {
@@ -71,7 +66,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 .header__img {
@@ -107,7 +102,7 @@ body {
 
 /* #region info content */
 .info__content {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   height: 460px;
   margin: 108px auto;
 }
@@ -160,6 +155,16 @@ body {
   font-weight: 700;
 }
 
+.info__experience__block:hover {
+  background-color: #FFB742 !important;
+  color: black !important;
+}
+
+.info__experience__block:hover h2 {
+  color: black !important;
+}
+
+
 .info__experience__block h2 {
   font-size: 32px;
   line-height: 40px;
@@ -171,17 +176,6 @@ body {
   line-height: 30px;
   margin-top: 0;
   font-weight: bolder;
-}
-
-.yellow__block {
-  background-color: #FFB742 !important;
-  color: black;
-}
-
-.info__experience__block:hover {
-  border: 1px solid blue;
-  width: 349px;
-  height: 119px;
 }
 
 .info__experience__block__title {
@@ -214,13 +208,13 @@ body {
 }
 
 .info__about h1 {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-top: 0;
 }
 
 .info__about__text {
-  font: 16px/2 "Poppins", sans-serif;
+  font: 16px/2 'Poppins', sans-serif;
   color: #D4D4D4;
   margin-bottom: 50px;
 }
@@ -266,17 +260,17 @@ body {
 }
 
 .footer__block h2 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: 32px;
 }
 
 .footer__block h3 {
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', sans-serif;
   font-size: 22px;
 }
 
 .footer__block p {
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   line-height: 36px;
   color: #7B7B7B;
