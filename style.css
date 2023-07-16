@@ -1,22 +1,67 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: white;
 }
 
-
 .page {
   margin: 0 auto;
   width: 1440px;
-  height: 4809px;
+  /* height: 4809px; */
   background-color: #212529;
 }
 
-
 .active-color {
-  color: #FFB742!important;
+  color: #FFB742 !important;
 }
 
+.secondary-text-color {
+  color: #D4D4D4 !important;
+}
+
+.line-height-90 {
+  line-height: 90px;
+}
+
+.title {
+  width: fit-content;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.block-center {
+  margin: 0 auto;
+}
+
+/* #region menu */
+.menu {
+  height: fit-content;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.menu__item__hover__1:hover {
+  color: #FFB742;
+}
+
+.menu__item__hover__2:hover {
+  background-color: #FFB742;
+  color: black;
+  border-radius: 2px;
+}
+
+/* #endregion */
 
 /* #region header */
 .header {
@@ -26,7 +71,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  font: 'Poppins';
+  font-family: 'Poppins';
 }
 
 .header__img {
@@ -36,22 +81,6 @@ body {
 
 .header__menu {
   width: 429px;
-  /* height: 47px; */
-  height: fit-content;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__menu__item {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.header__menu__item:hover {
-  color: #FFB742;
 }
 
 .header__btn {
@@ -65,12 +94,11 @@ body {
 
 /* #endregion */
 
-
 /* #region main */
 .main {
   padding: 0 40px;
+  margin-bottom: 116px;
 }
-
 
 /* #region info */
 .info {
@@ -79,7 +107,7 @@ body {
 
 /* #region info content */
 .info__content {
-  font: 'Inter';
+  font-family: 'Inter';
   height: 460px;
   margin: 108px auto;
 }
@@ -94,18 +122,12 @@ body {
   color: #FFB742;
 }
 
-.info__content__item__2 {
-  width: fit-content;
-  font-weight: 700;
-  font-size: 48px;
-  margin: 15px auto;
-}
-
 .info__content__item__3 {
   width: fit-content;
   font-weight: 400;
   font-size: 24px;
-  margin: 50px auto;
+  margin: 30px auto;
+  text-transform: capitalize;
 }
 
 .info__img {
@@ -114,6 +136,7 @@ body {
   margin: 0 auto;
   background-color: #212529;
 }
+
 /* #endregion */
 
 /* #region info experience */
@@ -137,8 +160,21 @@ body {
   font-weight: 700;
 }
 
+.info__experience__block h2 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+.info__experience__block p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 0;
+  font-weight: bolder;
+}
+
 .yellow__block {
-  background-color: #FFB742!important;
+  background-color: #FFB742 !important;
   color: black;
 }
 
@@ -151,14 +187,15 @@ body {
 .info__experience__block__title {
   text-align: center;
 }
+
 /* #endregion */
 
 /* #region info about */
-
 .info__about {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 65px;
 }
 
 .info__about__block {
@@ -176,8 +213,8 @@ body {
   text-transform: uppercase;
 }
 
-.info__about h1{
-  font: "Roboto";
+.info__about h1 {
+  font-family: "Roboto";
   font-weight: 700;
   margin-top: 0;
 }
@@ -188,16 +225,66 @@ body {
   margin-bottom: 50px;
 }
 
-
 /* #endregion */
 
-/* #region imy__worksnfo */
+/* #region imy__works */
 .my__works {
-
+  width: 1235px;
+  margin: 0 auto;
 }
-/* #endregion */
+
+.my__works__block__1 {
+  margin-bottom: 30px;
+}
+
+.my__works__menu {
+  width: 652px;
+  margin-bottom: 50px;
+}
+
+.my__works__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
 
 /* #endregion */
+/* #endregion */
+/* #endregion */
 
+/* #region footer */
+.footer {
+  padding: 140px 50px 92px 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1C1C1C;
+}
+
+.footer__block {
+  width: 320px;
+}
+
+.footer__block h2 {
+  font-family: 'Poppins';
+  font-size: 32px;
+}
+
+.footer__block h3 {
+  font-family: 'Work Sans';
+  font-size: 22px;
+}
+
+.footer__block p {
+  font-family: 'Work Sans';
+  font-size: 18px;
+  line-height: 36px;
+  color: #7B7B7B;
+}
+
+.footer__block p:hover {
+  color: white;
+  cursor: pointer;
+}
 
 /* #endregion */
