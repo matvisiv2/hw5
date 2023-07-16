@@ -1,3 +1,7 @@
+:root {
+  --active-color: #FFB742;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -7,7 +11,7 @@ body {
 }
 
 .active-color {
-  color: #FFB742;
+  color: var(--active-color);
 }
 
 .secondary-text-color {
@@ -79,9 +83,12 @@ body {
 }
 
 .header__btn {
-  width: 121px;
+  width: 150px;
   height: 54px;
-  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
   background-color: #FFB742;
   border-radius: 50px;
   cursor: pointer;
@@ -211,10 +218,14 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .info__about__text {
-  font: 16px/2 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
   color: #D4D4D4;
   margin-bottom: 50px;
 }
@@ -231,6 +242,10 @@ body {
   margin-bottom: 30px;
 }
 
+.my__works__block__1 h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
 .my__works__menu {
   width: 652px;
   margin-bottom: 50px;
@@ -241,6 +256,10 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+}
+
+.my__works__images img:hover {
+  box-shadow: 3px 3px 9px var(--active-color), -3px -3px 9px var(--active-color);
 }
 
 /* #endregion */
@@ -277,7 +296,7 @@ body {
 }
 
 .footer__block p:hover {
-  color: white;
+  color: var(--active-color);
   cursor: pointer;
 }
 
