@@ -260,6 +260,7 @@ body {
 
 .my__works__images img:hover {
   box-shadow: 3px 3px 9px var(--active-color), -3px -3px 9px var(--active-color);
+  cursor: pointer;
 }
 
 /* #endregion */
